@@ -28,6 +28,8 @@ class Parser
     virtual std::vector<std::string> registeredBehaviorTrees() const = 0;
 
     virtual Tree instantiateTree(const Blackboard::Ptr &root_blackboard, std::string tree_name = {}) = 0;
+
+    virtual void clearInternalState() {};
 };
 
 }

@@ -30,6 +30,8 @@ class XMLParser: public Parser
     Tree instantiateTree(const Blackboard::Ptr &root_blackboard,
                          std::string main_tree_to_execute = {}) override;
 
+    void clearInternalState() override;
+
   private:
 
     struct Pimpl;
